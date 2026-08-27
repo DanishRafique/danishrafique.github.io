@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Vynance &mdash; Personal Expense Tracker for Android</title>
-<meta name="description" content="Vynance is an Android expense tracker by Vynci Softworks. Record spending, budgets, debts, investments and pensions in a database that stays on your device. Optional backup to your own Google Drive. No ads, no analytics, works offline.">
+<meta name="description" content="Vynance is an Android expense tracker by Vynci Softworks. Record spending, budgets, debts, investments and pensions, kept on your phone and nowhere else. Optional backup to your own Google Drive. No ads, no tracking, works without a connection.">
 <meta name="keywords" content="expense tracker android, offline budget app, personal finance app, debt tracker, private expense tracker, Vynance">
 <meta property="og:title" content="Vynance — Personal Expense Tracker for Android">
 <meta property="og:description" content="Track spending, budgets, debts, investments and pensions. Your financial data stays on your device.">
@@ -65,12 +65,12 @@
     </svg>
     <h1><span class="grad">Vynance</span></h1>
     <p class="tag">A personal expense tracker for Android. Record what you spend, what you owe and
-       what you own &mdash; in a database that stays on your phone.</p>
+       what you own &mdash; kept on your phone, and nowhere else.</p>
     <div class="pills">
-      <span class="pill">Offline by default</span>
-      <span class="pill">No ads or analytics</span>
-      <span class="pill">Multi-currency</span>
-      <span class="pill">CSV &amp; PDF export</span>
+      <span class="pill">Works without a connection</span>
+      <span class="pill">No ads, no tracking</span>
+      <span class="pill">Any currency</span>
+      <span class="pill">Take your data with you</span>
     </div>
     <p class="meta" style="margin-top:28px">
       <a href="https://play.google.com/store/apps/details?id=com.vynci.moneytracker">Google Play</a><span class="dot">&middot;</span>
@@ -99,8 +99,8 @@
         <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5" width="19" height="14" rx="2.5"/><path d="M2.5 10h19"/><path d="M6.5 15h4"/></svg></div>
         <h3>Transactions &amp; accounts</h3>
         <p>Log expenses, income and transfers across bank, cash, wallet, credit-card and investment
-           accounts &mdash; each in its own currency, each with its own running balance. Recurring
-           rules post the entries that repeat.</p>
+           accounts &mdash; each in its own currency, each with its own running balance. The
+           entries that repeat every month can be set up once and left alone.</p>
       </div>
       <div class="tile wide">
         <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20h18"/><rect x="5" y="11" width="4" height="9"/><rect x="10.5" y="6" width="4" height="14"/><rect x="16" y="14" width="4" height="6"/></svg></div>
@@ -130,8 +130,8 @@
         <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="9" cy="9.5" r="1.8"/><path d="M4 17l4.5-4.5L13 17"/><path d="M14 14l2.5-2.5L20 15"/></svg></div>
         <h3>Receipts, voice entry, widgets and export</h3>
         <p>Attach a receipt photo to any transaction, add an entry by speaking it, check your balance
-           from a home-screen widget or the quick-settings tile, and export the whole ledger to CSV
-           or a formatted PDF report whenever you want it elsewhere.</p>
+           straight from your home screen, and take the whole ledger with you as a spreadsheet or a
+           printable report whenever you want it elsewhere.</p>
       </div>
     </div>
   </div>
@@ -144,9 +144,9 @@
       <h2>Your data stays on your device</h2>
     </div>
     <div class="callout reveal">
-      <p>Vynance stores every transaction, balance and receipt in a private database on your phone.
-         There is no Vynance server. We do not receive, store, sell or analyse your financial
-         records, and the app contains no advertising, analytics or tracking of any kind.</p>
+      <p>Vynance keeps every transaction, balance and receipt in a private space on your phone that
+         no other app can open. There is no Vynance server. We do not receive, store, sell or study
+         your financial records, and the app carries no advertising or tracking of any kind.</p>
       <p>The only copy that ever leaves your phone is a backup you choose to create.</p>
     </div>
 
@@ -154,18 +154,18 @@
       <h2 style="font-size:clamp(20px,1.2vw + 17px,25px)">Why Vynance asks for a Google account</h2>
     </div>
     <ul class="checks reveal">
-      <li><strong>Google Sign-In</strong> identifies which account a backup belongs to, and lets the
-          app detect when a different person signs in on a shared device, so one user&#8217;s records
-          are never shown to another.</li>
-      <li><strong>Google Drive (app data folder)</strong> stores your backup &mdash; a compressed
-          copy of the app database and your receipt images &mdash; inside your own Google account.</li>
+      <li><strong>Signing in with Google</strong> tells the app whose backup is whose, and lets it
+          notice when someone else signs in on a shared phone, so one person&#8217;s records are never
+          shown to another.</li>
+      <li><strong>Google Drive</strong> holds your backup &mdash; a copy of your records and receipt
+          photos &mdash; inside your own Google account.</li>
     </ul>
     <p class="reveal" style="margin-top:20px;color:var(--muted);font-size:15px">
-      The app requests the <code>drive.appdata</code> scope only. That is Drive&#8217;s hidden,
-      application-specific folder: Vynance cannot see, read, list or modify any other file in your
-      Drive, and the developer has no access to the backup at all. It exists so that replacing or
-      resetting your phone does not cost you your records. You can revoke this access at any time
-      from your <a href="https://myaccount.google.com/permissions" style="color:var(--violet);font-weight:560">Google Account permissions</a> page.
+      The backup goes into a private corner of your Drive that only Vynance can use. It cannot see,
+      open or change anything else in your Drive, and we have no access to the backup at all. It is
+      there so that replacing or resetting your phone does not cost you your records. You can take
+      that access away at any time from your
+      <a href="https://myaccount.google.com/permissions" style="color:var(--violet);font-weight:560">Google Account permissions</a> page.
     </p>
   </div>
 </section>
