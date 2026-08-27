@@ -130,7 +130,11 @@ section + section{border-top:1px solid var(--line)}
   flex:0 0 60px;width:60px;height:60px;border-radius:17px;display:grid;place-items:center;
   background:var(--icon-bg);box-shadow:inset 0 0 0 1px rgba(255,255,255,.07);
 }
-.card .icon svg{width:42px;height:42px}
+.card .icon svg,.card .icon img{width:42px;height:42px}
+/* Rizq's icon tile is the cream of its app icon, not a dark tile, so the shared
+   white inset hairline above is invisible on it — give it a dark one instead or the
+   tile floats edgeless on the white card in light mode. */
+.r .icon{box-shadow:inset 0 0 0 1px rgba(31,83,57,.12)}
 .card .kicker{font-size:11.5px;font-weight:680;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin:0 0 3px}
 .card h3{font-size:clamp(21px,1.1vw + 18px,25px);margin:0;letter-spacing:-.025em}
 .card .desc{color:var(--ink-2);font-size:15.4px;margin:0 0 18px}
@@ -155,7 +159,7 @@ section + section{border-top:1px solid var(--line)}
 .btn-ghost{border-color:var(--line);color:var(--ink);background:transparent}
 .btn-ghost:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-soft)}
 .v{--accent:var(--violet);--accent-soft:color-mix(in srgb, var(--violet) 9%, transparent);--accent-line:color-mix(in srgb, var(--violet) 42%, var(--line));--icon-bg:linear-gradient(150deg,#1c1440,#241a52)}
-.r{--accent:var(--emerald);--accent-soft:color-mix(in srgb, var(--emerald) 10%, transparent);--accent-line:color-mix(in srgb, var(--emerald) 42%, var(--line));--icon-bg:linear-gradient(150deg,#062f24,#0a4a37)}
+.r{--accent:var(--emerald);--accent-soft:color-mix(in srgb, var(--emerald) 10%, transparent);--accent-line:color-mix(in srgb, var(--emerald) 42%, var(--line));--icon-bg:#F6EFDA}
 .badge-live{
   display:inline-flex;align-items:center;gap:6px;font-size:11.6px;font-weight:680;letter-spacing:.05em;
   text-transform:uppercase;color:var(--accent);background:var(--accent-soft);
