@@ -41,6 +41,10 @@
   footer a:hover{color:var(--emerald)}
   .principle .n{background:linear-gradient(120deg,var(--emerald),var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent}
   nav.top .links a:hover{color:var(--emerald)}
+  thead th.c-r{color:var(--emerald)}
+  thead th.c-v{color:var(--violet)}
+  table td:last-child,table th:last-child{background:color-mix(in srgb, var(--emerald) 5%, transparent)}
+  tbody tr:hover td:last-child{background:color-mix(in srgb, var(--emerald) 9%, transparent)}
 </style>
 </head>
 <body>
@@ -55,6 +59,7 @@
     <div class="links">
       <a href="#islamic">Islamic features</a>
       <a href="#everything" class="hide-sm">Everyday</a>
+      <a href="#compare" class="hide-sm">Compare</a>
       <a href="#stance" class="hide-sm">Our stance</a>
       <a href="#legal">Legal</a>
       <a href="/">Vynci Softworks</a>
@@ -208,6 +213,46 @@
            whenever you want it elsewhere.</p>
       </div>
     </div>
+  </div>
+</section>
+
+<section id="compare">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Which app</p>
+      <h2>Rizq or Vynance?</h2>
+      <p>Vynci Softworks publishes two finance apps.
+         <a href="/vynance/" style="color:var(--emerald);font-weight:560">Vynance</a> is a
+         straightforward expense tracker. Rizq is for people who want zakat, riba and the Hijri
+         calendar handled as part of their record-keeping rather than worked out on the side.</p>
+    </div>
+    <div class="tablewrap reveal">
+      <table>
+        <thead>
+          <tr><th scope="col">Feature</th><th scope="col" class="c-v">Vynance</th><th scope="col" class="c-r">Rizq</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="feat">Transactions, accounts, transfers, multi-currency</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
+          <tr><td class="feat">Budgets, reports, debts, investments, pensions, goals</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
+          <tr><td class="feat">Receipts, voice entry, widgets, CSV &amp; PDF export</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
+          <tr><td class="feat">Offline database, optional Google Drive backup</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
+          <tr><td class="feat">Zakat on wealth &mdash; nisab, hawl, madhhab settings</td><td class="no">&mdash;</td><td class="yes">Yes</td></tr>
+          <tr><td class="feat">Zakat al-Fitr, with Ramadan reminder</td><td class="no">&mdash;</td><td class="yes">Yes</td></tr>
+          <tr><td class="feat">Riba flagging and purification</td><td class="no">&mdash;</td><td class="yes">Yes</td></tr>
+          <tr><td class="feat">Sadaqah and the eight asnaf</td><td class="no">&mdash;</td><td class="yes">Yes</td></tr>
+          <tr><td class="feat">Hijri periods &mdash; Ramadan, Hajj, Qurbani, Eid</td><td class="no">&mdash;</td><td class="yes">Yes</td></tr>
+          <tr><td class="feat">Spending screening (Clear / Review / Avoid)</td><td class="no">&mdash;</td><td class="yes">Yes</td></tr>
+          <tr><td class="feat">Qard hasan, murabaha, ijara, takaful</td><td class="no">&mdash;</td><td class="yes">Yes</td></tr>
+          <tr><td class="feat">Zakat statement PDF</td><td class="no">&mdash;</td><td class="yes">Yes</td></tr>
+          <tr><td class="feat">Your data stays on your device</td><td class="yes">Always</td><td class="yes">Always</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="reveal" style="margin-top:16px;font-size:14.4px;color:var(--muted)">
+      Both apps are free to install, carry no advertising and collect no analytics. Each has its own
+      Play listing, its own storage and its own
+      <a href="/rizq/privacy-policy.html" style="color:var(--emerald)">privacy policy</a>.
+    </p>
   </div>
 </section>
 
