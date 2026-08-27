@@ -3,140 +3,535 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Vynci Softworks &mdash; Makers of Vynance, a Personal Expense Tracker for Android</title>
-<meta name="description" content="Vynci Softworks builds privacy-respecting mobile software. Our app Vynance is a personal expense tracker for Android that records spending, budgets, debts, investments and pensions in a database that stays on your device.">
-<meta property="og:title" content="Vynci Softworks — Makers of Vynance">
-<meta property="og:description" content="Vynance is a personal expense tracker for Android. Track spending, budgets, debts, investments and pensions. Your financial data stays on your device.">
+<title>Vynci Softworks &mdash; Makers of Vynance &amp; Rizq, Private Finance Apps for Android</title>
+<meta name="description" content="Vynci Softworks builds privacy-first Android finance apps from Kolkata, India. Vynance is a personal expense tracker; Rizq is an Islamic finance app with a zakat engine, riba tracking and the Hijri calendar. Both keep your financial data on your own device.">
+<meta name="keywords" content="expense tracker android, islamic finance app, zakat calculator app, offline budget app, privacy finance app, Vynance, Rizq, Vynci Softworks">
+<meta name="author" content="Vynci Softworks">
+<meta property="og:title" content="Vynci Softworks — Makers of Vynance &amp; Rizq">
+<meta property="og:description" content="Two privacy-first Android finance apps. Vynance tracks what you spend, owe and own. Rizq adds zakat, riba tracking, sadaqah and the Hijri calendar. No server, no tracking, no ads.">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://vynci.sbs/">
+<meta property="og:image" content="https://vynci.sbs/vynci-mark-512.png">
+<meta property="og:site_name" content="Vynci Softworks">
+<meta name="twitter:card" content="summary">
 <link rel="canonical" href="https://vynci.sbs/">
-<style>
-  :root{--ink:#141419;--muted:#5b5b66;--line:#e5e5ec;--brand:#7C5CFC;--bg:#fff;--soft:#f8f7ff;--deep:#171232}
-  *{box-sizing:border-box}
-  body{margin:0;background:var(--bg);color:var(--ink);
-       font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}
-  .wrap{max-width:800px;margin:0 auto;padding:0 22px}
-  header{background:var(--deep);color:#fff;padding:70px 0 62px;text-align:center}
-  header h1{font-size:40px;margin:0 0 12px;letter-spacing:-.03em}
-  header p{font-size:18.5px;color:#c9c4e8;margin:0 auto;max-width:520px}
-  header .loc{font-size:14px;color:#8e88b5;margin-top:20px}
-  section{padding:52px 0;border-bottom:1px solid var(--line)}
-  section:last-of-type{border-bottom:0}
-  h2{font-size:24px;margin:0 0 14px;letter-spacing:-.015em}
-  p{margin:0 0 14px}
-  .product{display:flex;gap:22px;align-items:flex-start;border:1px solid var(--line);
-           border-radius:16px;padding:24px;text-decoration:none;color:inherit;transition:.15s}
-  .product:hover{border-color:var(--brand);background:var(--soft)}
-  .product svg{flex:0 0 72px;width:72px;height:72px;border-radius:16px;background:var(--deep)}
-  .product h3{margin:0 0 4px;font-size:21px;color:var(--brand);letter-spacing:-.01em}
-  .product .sub{font-size:14px;color:var(--muted);margin:0 0 10px;text-transform:uppercase;letter-spacing:.06em}
-  .product p{font-size:15px;color:var(--ink);margin:0}
-  .more{font-size:14.5px;color:var(--brand);margin-top:12px;display:inline-block}
-  ul{padding-left:22px;margin:0}
-  li{margin:8px 0}
-  footer{padding:34px 0 56px;font-size:14px;color:var(--muted)}
-  footer a{color:var(--brand)}
-  @media(max-width:620px){
-    header{padding:48px 0 44px}header h1{font-size:30px}header p{font-size:16.5px}
-    section{padding:38px 0}.product{flex-direction:column;gap:16px}
-  }
-</style>
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<meta name="theme-color" content="#171232">
+<meta name="theme-color" content="#0B0A14" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#171232" media="(prefers-color-scheme: light)">
+<link rel="stylesheet" href="/styles.css">
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 
-<header>
+<nav class="top" id="nav">
+  <div class="wrap inner">
+    <a class="brand" href="/">
+      <img src="/vynci-mark-512.png" alt="" width="26" height="26">
+      <span>Vynci Softworks</span>
+    </a>
+    <div class="links">
+      <a href="#products">Apps</a>
+      <a href="/rizq/">Rizq</a>
+      <a href="#privacy" class="hide-sm">Privacy</a>
+      <a href="#faq" class="hide-sm">FAQ</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
   <div class="wrap">
-    <img src="/vynci-mark-512.png" alt="Vynci Softworks logo" width="104" height="104"
-         style="display:block;margin:0 auto 20px;width:104px;height:104px">
-    <h1>Vynci Softworks</h1>
-    <p>Makers of <strong style="color:#fff">Vynance</strong> &mdash; a personal expense tracker for Android that keeps your financial data on your own device.</p>
-    <p class="loc" style="margin-top:16px">
-      <a href="https://vynci.sbs/vynance/privacy-policy.html" style="color:#c9c4e8">Privacy Policy</a>
-      &nbsp;&middot;&nbsp;
-      <a href="https://vynci.sbs/vynance/terms-and-conditions.html" style="color:#c9c4e8">Terms &amp; Conditions</a>
+    <img class="mark" src="/vynci-mark-512.png" alt="Vynci Softworks logo" width="96" height="96">
+    <h1>Finance apps that <span class="grad">keep your data</span> on your phone</h1>
+    <p class="tag">Vynci Softworks builds privacy-first Android software. Two apps, one honest ledger:
+      <strong style="color:#fff">Vynance</strong> for everyday personal finance, and
+      <strong style="color:#fff">Rizq</strong> for Muslims who want zakat, riba and the Hijri calendar
+      built into the same record-keeping.</p>
+    <div class="pills">
+      <span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>No server, no account required to use</span>
+      <span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18.36 6.64A9 9 0 1 1 5.64 6.64"/><path d="M12 2v10"/></svg>Works fully offline</span>
+      <span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m4.9 4.9 14.2 14.2"/></svg>Zero analytics, zero ads</span>
+      <span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg>Export everything, any time</span>
+    </div>
+    <p class="meta">
+      <a href="/vynance/">Vynance</a><span class="dot">&middot;</span>
+      <a href="/rizq/">Rizq</a><span class="dot">&middot;</span>
+      <a href="#legal">Legal</a><span class="dot">&middot;</span>
+      <span>Kolkata, India</span>
     </p>
-    <p class="loc">Kolkata, India</p>
   </div>
 </header>
 
-<div class="wrap">
+<main id="main">
 
-<section>
-  <h2>Our products</h2>
-  <a class="product" href="vynance/">
-    <svg viewBox="0 0 108 108" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Vynance logo">
-      <defs>
-        <linearGradient id="g1" gradientUnits="userSpaceOnUse" x1="32" y1="76" x2="80" y2="28">
-          <stop offset="0" stop-color="#7C5CFC"/><stop offset="1" stop-color="#4ADE9C"/>
-        </linearGradient>
-        <linearGradient id="g2" gradientUnits="userSpaceOnUse" x1="60" y1="38" x2="82" y2="26">
-          <stop offset="0" stop-color="#5FCEC4"/><stop offset="1" stop-color="#4ADE9C"/>
-        </linearGradient>
-      </defs>
-      <g transform="translate(54,54) scale(1.42) translate(-55.3,-52.7)">
-        <path d="M73.5,44.9 A21.5,21.5 0 1 1 63.1,34.5" fill="none" stroke="url(#g1)" stroke-width="8" stroke-linecap="round"/>
-        <path d="M67.8,30.1 A27.6,27.6 0 0 1 77.9,40.2" fill="none" stroke="url(#g2)" stroke-width="8" stroke-linecap="round"/>
-      </g>
-    </svg>
-    <div>
-      <p class="sub">Android app</p>
-      <h3>Vynance</h3>
-      <p>A personal expense tracker. Record what you spend, what you owe and what you own &mdash; transactions, budgets, debts, investments and pensions &mdash; in a database that stays on your phone.</p>
-      <span class="more">Learn more about Vynance &rarr;</span>
+<!-- ── PRODUCTS ───────────────────────────────────────────────────── -->
+<section id="products">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Our apps</p>
+      <h2>Two apps, one engine</h2>
+      <p>Rizq is Vynance's Islamic edition: the same ledger, the same offline database and the same
+         privacy stance, with Islamic finance built into the core rather than bolted on. Pick the one
+         that matches how you think about your money.</p>
     </div>
-  </a>
+
+    <div class="products">
+
+      <article class="card v reveal">
+        <div class="top">
+          <div class="icon">
+            <svg viewBox="0 0 108 108" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Vynance logo">
+              <defs>
+                <linearGradient id="vg1" gradientUnits="userSpaceOnUse" x1="32" y1="76" x2="80" y2="28">
+                  <stop offset="0" stop-color="#7C5CFC"/><stop offset="1" stop-color="#4ADE9C"/>
+                </linearGradient>
+                <linearGradient id="vg2" gradientUnits="userSpaceOnUse" x1="60" y1="38" x2="82" y2="26">
+                  <stop offset="0" stop-color="#5FCEC4"/><stop offset="1" stop-color="#4ADE9C"/>
+                </linearGradient>
+              </defs>
+              <g transform="translate(54,54) scale(1.42) translate(-55.3,-52.7)">
+                <path d="M73.5,44.9 A21.5,21.5 0 1 1 63.1,34.5" fill="none" stroke="url(#vg1)" stroke-width="8" stroke-linecap="round"/>
+                <path d="M67.8,30.1 A27.6,27.6 0 0 1 77.9,40.2" fill="none" stroke="url(#vg2)" stroke-width="8" stroke-linecap="round"/>
+              </g>
+            </svg>
+          </div>
+          <div>
+            <p class="kicker">Android app</p>
+            <h3>Vynance</h3>
+          </div>
+          <span class="badge-live"><span class="blip"></span>On Google Play</span>
+        </div>
+        <p class="desc">A personal expense tracker. Record what you spend, what you owe and what you
+           own &mdash; transactions, budgets, debts, investments and pensions &mdash; in a database
+           that never leaves your phone unless you back it up yourself.</p>
+        <ul class="mini">
+          <li>Multi-account, multi-currency ledger with transfers</li>
+          <li>Category budgets with local alerts before you overspend</li>
+          <li>Reports: category mix, trends, cash flow, savings rate</li>
+          <li>Debts per person, investments, pensions and savings goals</li>
+          <li>Receipt photos, voice entry, home-screen widget, CSV &amp; PDF export</li>
+        </ul>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vynci.moneytracker">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.6 1.8a1.5 1.5 0 0 0-.5 1.1v18.2c0 .45.2.85.5 1.1l10-10.2-10-10.2Zm11.1 9.1 2.9-2.95-9.3-5.3 6.4 8.25Zm0 2.2-6.4 8.25 9.3-5.3-2.9-2.95Zm4.3-3.9-2.3 1.3 2.6 2.7-2.6 2.65 2.3 1.3c1.3-.75 1.3-2.55 0-3.3l-.3-.15.3-.15c1.3-.75 1.3-2.55 0-3.3l-.3-.15.3-.15Z"/></svg>
+            Get on Google Play
+          </a>
+          <a class="btn btn-ghost" href="/vynance/">Learn more &rarr;</a>
+        </div>
+      </article>
+
+      <article class="card r reveal">
+        <div class="top">
+          <div class="icon">
+            <svg viewBox="0 0 108 108" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Rizq logo">
+              <defs>
+                <linearGradient id="rg1" gradientUnits="userSpaceOnUse" x1="30" y1="80" x2="82" y2="26">
+                  <stop offset="0" stop-color="#0EA875"/><stop offset="1" stop-color="#4ADE9C"/>
+                </linearGradient>
+              </defs>
+              <path d="M70 30a27 27 0 1 0 0 48 32 32 0 1 1 0-48Z" fill="url(#rg1)"/>
+              <path d="M78.5 46.5l2.6 5.6 6.1.8-4.5 4.2 1.2 6-5.4-3-5.4 3 1.2-6-4.5-4.2 6.1-.8 2.6-5.6Z" fill="#D9A93C"/>
+            </svg>
+          </div>
+          <div>
+            <p class="kicker">Android app &middot; Islamic edition</p>
+            <h3>Rizq</h3>
+          </div>
+          <span class="badge-live"><span class="blip"></span>On Google Play</span>
+        </div>
+        <p class="desc">Everything Vynance does, plus Islamic finance as a first-class part of the
+           ledger: a madhhab-configurable zakat engine, riba flagging and purification, sadaqah
+           tracking and the Hijri calendar running through budgets, reports and reminders.</p>
+        <ul class="mini">
+          <li>Zakat on wealth &mdash; nisab, hawl, and a frozen record of every assessment</li>
+          <li>Zakat al-Fitr per household head, with a Ramadan reminder</li>
+          <li>Riba flagged on accounts and transactions, kept out of income</li>
+          <li>Sadaqah and zakat distribution across the eight asnaf</li>
+          <li>Hijri months for budgets and reports &mdash; Ramadan, Hajj, Qurbani</li>
+        </ul>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vynci.rizq">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.6 1.8a1.5 1.5 0 0 0-.5 1.1v18.2c0 .45.2.85.5 1.1l10-10.2-10-10.2Zm11.1 9.1 2.9-2.95-9.3-5.3 6.4 8.25Zm0 2.2-6.4 8.25 9.3-5.3-2.9-2.95Zm4.3-3.9-2.3 1.3 2.6 2.7-2.6 2.65 2.3 1.3c1.3-.75 1.3-2.55 0-3.3l-.3-.15.3-.15c1.3-.75 1.3-2.55 0-3.3l-.3-.15.3-.15Z"/></svg>
+            Get on Google Play
+          </a>
+          <a class="btn btn-ghost" href="/rizq/">Learn more &rarr;</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
 </section>
 
-<section>
-  <h2>What Vynance does</h2>
-  <p style="font-size:17.5px">Vynance is a personal finance record-keeping app for Android phones. You enter your income and expenses; the app organises them into accounts, categories and budgets, and shows you where your money actually goes.</p>
-  <p>It is a private ledger, not a banking app. Vynance does not connect to any bank, does not read your statements and cannot move money. Every figure it shows is calculated from entries you typed yourself.</p>
-  <ul>
-    <li><strong>Transactions &amp; accounts</strong> &mdash; log expenses, income and transfers across bank, cash, wallet, credit-card and investment accounts, each in its own currency.</li>
-    <li><strong>Budgets &amp; alerts</strong> &mdash; set monthly limits per category and get a local notification as you approach them.</li>
-    <li><strong>Reports &amp; insights</strong> &mdash; category breakdowns, spending trends, cash-flow and savings charts.</li>
-    <li><strong>Debts &amp; repayments</strong> &mdash; track money lent and borrowed per person, and what is outstanding or overdue.</li>
-    <li><strong>Investments &amp; pensions</strong> &mdash; record holdings and retirement plans over time, and see contributions against growth.</li>
-    <li><strong>Receipts, voice &amp; widgets</strong> &mdash; attach a receipt photo, add a transaction by speaking it, check your balance from the home screen.</li>
-  </ul>
-  <p><a href="vynance/">Full details about Vynance &rarr;</a></p>
+<!-- ── RIZQ DEEP DIVE ─────────────────────────────────────────────── -->
+<section id="rizq">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Rizq &mdash; Islamic finance</p>
+      <h2>Your money. Your obligations. One ledger.</h2>
+      <p>Rizq is built to answer five questions: what money you have, what part of it is actually
+         yours, what part carries an Islamic obligation, where it came from and where it went &mdash;
+         with the method behind every figure shown on screen.</p>
+    </div>
+
+    <div class="bento reveal">
+      <div class="tile wide g">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M3 12h18M3 18h18"/><circle cx="8" cy="6" r="2" fill="currentColor" stroke="none"/><circle cx="16" cy="12" r="2" fill="currentColor" stroke="none"/><circle cx="10" cy="18" r="2" fill="currentColor" stroke="none"/></svg></div>
+        <h3>A zakat engine, not a calculator</h3>
+        <p>Mark which accounts and assets are zakatable, set your nisab basis and madhhab
+           &mdash; Hanafi, Shafi&#8217;i, Maliki or Hanbali &mdash; and Rizq assesses your wealth
+           against the threshold across the hawl. Every assessment is stored with the inputs that
+           produced it, so last year&#8217;s figure never silently changes when a price does.</p>
+      </div>
+      <div class="tile wide g">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+        <h3>Riba tracked, separated, purified</h3>
+        <p>Flag an account as interest-bearing and the interest it credits is marked as riba rather
+           than counted as income &mdash; on one-off entries and on recurring rules alike. The
+           purification view totals what has accrued so you can give it away, and keeps a record
+           of what you already have.</p>
+      </div>
+      <div class="tile g">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l8.8 8.8 8.8-8.8a5.5 5.5 0 0 0 0-7.8Z"/></svg></div>
+        <h3>Sadaqah &amp; the eight asnaf</h3>
+        <p>Log charity as it happens and record which of the eight categories named in
+           Surah At-Tawbah 9:60 each zakat payment went to. One payment, one category &mdash;
+           nothing is apportioned on your behalf.</p>
+      </div>
+      <div class="tile g">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6.5A8.5 8.5 0 1 0 18 17.5 10.5 10.5 0 1 1 18 6.5Z"/></svg></div>
+        <h3>The Hijri calendar, everywhere</h3>
+        <p>Switch periods from Gregorian to Hijri and months, reports and totals follow. Ramadan
+           budgets, a Hajj or Umrah savings goal with a target Hijri year, and Qurbani and Eid
+           presets all sit on the same period system.</p>
+      </div>
+      <div class="tile g">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11.5 11.2 14 15 9.5"/><path d="M12 3 4 6.2V12c0 5 3.4 8.2 8 9 4.6-.8 8-4 8-9V6.2L12 3Z"/></svg></div>
+        <h3>Spending screening that states, never scores</h3>
+        <p>Mark a category Clear, Review or Avoid and Rizq summarises your spending against your
+           own markings. Nothing is classified for you, there is no halal score, and no line of
+           it grades your life.</p>
+      </div>
+      <div class="tile g">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2.5"/><path d="M7 9h10M7 13h6"/></svg></div>
+        <h3>Islamic financing &amp; debt</h3>
+        <p>Record a debt as qard hasan, murabaha or ijara &mdash; agreed total and what is left,
+           with no interest-rate field anywhere, because these contracts have none. Takaful
+           contributions ride the ordinary recurring-expense path.</p>
+      </div>
+      <div class="tile g">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3v5h5"/><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8l-5-5Z"/><path d="M9 13h6M9 17h4"/></svg></div>
+        <h3>A statement you can hand over</h3>
+        <p>Export a zakat statement as a PDF for one assessment or a whole year &mdash; restating
+           the figures exactly as they were frozen, never recomputed at export time.</p>
+      </div>
+      <div class="tile full">
+        <div class="ico g" style="background:color-mix(in srgb,var(--gold) 16%,transparent);color:var(--gold)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.5"/><path d="M12 8.2v.2M12 11.5v4.6"/></svg></div>
+        <h3>Rizq states the facts. It does not issue a fatwa.</h3>
+        <p>Every Islamic figure in the app shows the rule that produced it and the inputs you gave,
+           and the wording stays descriptive throughout &mdash; &ldquo;review&rdquo; and
+           &ldquo;avoid&rdquo;, never a ruling. Madhhabs differ, and Rizq names which position it
+           applied rather than pretending there is only one. For a binding opinion on your own
+           situation, ask a qualified scholar &mdash; Rizq keeps the records that make that
+           conversation easy.</p>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section>
-  <h2>Why Vynance asks for a Google account</h2>
-  <p>Vynance uses two Google services, and only these two. <strong>Google Sign-In</strong> identifies which account a backup belongs to, and lets the app detect when a different person signs in on a shared device. <strong>Google Drive</strong> stores your backup &mdash; a compressed copy of the app database and your receipt images &mdash; inside your own Google account.</p>
-  <p>The app requests the <code>drive.appdata</code> scope only. That is Drive's hidden, application-specific folder: Vynance cannot see, read, list or modify any other file in your Drive, and we have no access to the backup at all. It exists so that replacing or resetting your phone does not cost you your records.</p>
+<!-- ── COMPARE ────────────────────────────────────────────────────── -->
+<section id="compare">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Which one</p>
+      <h2>Vynance or Rizq?</h2>
+      <p>Rizq contains all of Vynance. If you want the Islamic features, install Rizq &mdash; you
+         lose nothing by doing so.</p>
+    </div>
+    <div class="tablewrap reveal">
+      <table>
+        <thead>
+          <tr><th scope="col">Feature</th><th scope="col" class="c-v">Vynance</th><th scope="col" class="c-r">Rizq</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="feat">Transactions, accounts, transfers, multi-currency</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
+          <tr><td class="feat">Budgets, reports, debts, investments, pensions, goals</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
+          <tr><td class="feat">Offline database, CSV &amp; PDF export, Drive backup</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
+          <tr><td class="feat">Zakat on wealth &amp; Zakat al-Fitr</td><td class="no">&mdash;</td><td class="yes">Yes</td></tr>
+          <tr><td class="feat">Riba flagging &amp; purification</td><td class="no">&mdash;</td><td class="yes">Yes</td></tr>
+          <tr><td class="feat">Sadaqah &amp; asnaf distribution</td><td class="no">&mdash;</td><td class="yes">Yes</td></tr>
+          <tr><td class="feat">Hijri periods, Ramadan &amp; Hajj planning</td><td class="no">&mdash;</td><td class="yes">Yes</td></tr>
+          <tr><td class="feat">Qard hasan, murabaha, ijara, takaful</td><td class="no">&mdash;</td><td class="yes">Yes</td></tr>
+          <tr><td class="feat">Your data stays on your device</td><td class="yes">Always</td><td class="yes">Always</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="reveal" style="margin-top:16px;font-size:14.4px;color:var(--muted)">
+      Both apps read the same database format, so a local backup taken from one restores into the
+      other. Google Drive backups are scoped per app and do not cross over.
+    </p>
+  </div>
 </section>
 
-<section>
-  <h2>How we build</h2>
-  <ul>
-    <li><strong>Local first.</strong> Your data lives on your device. We run no server that collects it.</li>
-    <li><strong>No tracking.</strong> No analytics SDKs, no advertising, no behavioural profiling in any product we ship.</li>
-    <li><strong>Your data is portable.</strong> Everything you enter can be exported and taken elsewhere.</li>
-    <li><strong>Plainly explained.</strong> Every product says what it collects and why, in words rather than boilerplate.</li>
-  </ul>
+<!-- ── PRIVACY ────────────────────────────────────────────────────── -->
+<section id="privacy">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Privacy</p>
+      <h2>There is no Vynci server holding your money data</h2>
+      <p>Both apps are private ledgers, not banking apps. They do not connect to a bank, cannot read
+         your statements and cannot move money. Every figure on screen is calculated from entries
+         you typed yourself.</p>
+    </div>
+    <div class="principles reveal">
+      <div class="principle">
+        <div class="n">01</div><h3>Local first</h3>
+        <p>Your transactions, balances and receipts live in a database on your phone. We run nothing that collects them.</p>
+      </div>
+      <div class="principle">
+        <div class="n">02</div><h3>No tracking</h3>
+        <p>No analytics SDKs, no advertising, no behavioural profiling, in any product we ship.</p>
+      </div>
+      <div class="principle">
+        <div class="n">03</div><h3>Portable</h3>
+        <p>Everything you enter can be exported to CSV or PDF and taken elsewhere. No lock-in.</p>
+      </div>
+      <div class="principle">
+        <div class="n">04</div><h3>Plainly said</h3>
+        <p>Each app states what it collects and why, in words rather than boilerplate.</p>
+      </div>
+    </div>
+
+    <div class="callout reveal" style="margin-top:26px">
+      <h3>Why the apps ask for a Google account</h3>
+      <p>Two Google services are used, and only these two. <strong>Google Sign-In</strong> identifies
+         which account a backup belongs to, and lets the app notice when a different person signs in
+         on a shared device. <strong>Google Drive</strong> stores your backup &mdash; a compressed
+         copy of the app database and your receipt images &mdash; inside your own Google account.</p>
+      <p>The apps request the <code>drive.appdata</code> scope only: Drive&#8217;s hidden,
+         application-specific folder. They cannot see, read, list or modify any other file in your
+         Drive, and we have no access to the backup at all. It exists so that replacing or resetting
+         your phone does not cost you your records. You can revoke it any time from your
+         <a href="https://myaccount.google.com/permissions" style="color:var(--violet);font-weight:560">Google Account permissions</a> page.</p>
+    </div>
+  </div>
 </section>
 
-<section>
-  <h2>Contact</h2>
-  <p>General enquiries, support and privacy requests:<br>
-     <a href="mailto:vyncisoftworks@gmail.com">vyncisoftworks@gmail.com</a></p>
-  <p>Vynci Softworks<br>
-     34 Bright Street, Kolkata 700017<br>
-     West Bengal, India</p>
+<!-- ── HOW WE BUILD ───────────────────────────────────────────────── -->
+<section id="build">
+  <div class="wrap narrow">
+    <div class="section-head reveal">
+      <p class="eyebrow">How we build</p>
+      <h2>Small apps, built carefully</h2>
+    </div>
+    <ul class="checks reveal">
+      <li><strong>One codebase, two apps.</strong> Rizq is built from the same source as Vynance, so a fix in the ledger reaches both on the same day.</li>
+      <li><strong>One database format.</strong> Both apps read and write the same schema, which is why a local backup moves between them without a migration.</li>
+      <li><strong>Native Android.</strong> Kotlin and Jetpack Compose, no web view, no cross-platform wrapper &mdash; Material 3, dark theme, dynamic colour and home-screen widgets.</li>
+      <li><strong>Nothing invented.</strong> The apps do not guess prices, estimate what you did not enter, or fill a gap with a plausible number.</li>
+      <li><strong>Tested where it counts.</strong> The money rules and the Islamic rules are pure, testable logic with their own unit tests, kept apart from the screens.</li>
+    </ul>
+  </div>
 </section>
+
+<!-- ── FAQ ────────────────────────────────────────────────────────── -->
+<section id="faq">
+  <div class="wrap narrow">
+    <div class="section-head reveal">
+      <p class="eyebrow">Questions</p>
+      <h2>Frequently asked</h2>
+    </div>
+    <div class="reveal">
+      <details>
+        <summary>Do the apps connect to my bank?</summary>
+        <div class="body"><p>No. Neither app links to a bank, imports statements or has any ability to move money. You enter transactions yourself, or set up recurring rules for the ones that repeat.</p></div>
+      </details>
+      <details>
+        <summary>Can I use them without signing in to Google?</summary>
+        <div class="body"><p>Sign-in exists so a backup has an owner and a shared device does not show one person&#8217;s records to another. The ledger itself works entirely offline &mdash; no network connection is needed to record, budget or report.</p></div>
+      </details>
+      <details>
+        <summary>Which madhhab does Rizq follow for zakat?</summary>
+        <div class="body"><p>Whichever you choose. Hanafi, Shafi&#8217;i, Maliki and Hanbali positions are configurable, and the methodology view names the rule that produced the figure you are looking at. Shia khums is not currently supported.</p></div>
+      </details>
+      <details>
+        <summary>Is Rizq issuing religious rulings?</summary>
+        <div class="body"><p>No. Rizq states financial facts, shows its method and preserves your inputs. Anything that would amount to a ruling &mdash; classifying your spending for you, scoring it, or calculating an inheritance share &mdash; is deliberately not built.</p></div>
+      </details>
+      <details>
+        <summary>I already use Vynance. Can I move to Rizq?</summary>
+        <div class="body"><p>Yes. Export a local backup from Vynance and restore it in Rizq &mdash; the database format is identical, so nothing is lost and no conversion runs. Google Drive backups are scoped per app, so use the local file for the move.</p></div>
+      </details>
+      <details>
+        <summary>What does it cost?</summary>
+        <div class="body"><p>Both apps are free to install, with the everyday ledger, budgets, debts and the zakat features included. A premium subscription unlocks the heavier export and reporting tools. There are no ads in either app, at any tier.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ── LEGAL ──────────────────────────────────────────────────────── -->
+<section id="legal">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Legal</p>
+      <h2>Policies, per app</h2>
+      <p>Each app has its own policy, because each has its own Play listing, its own Drive folder
+         and &mdash; in Rizq's case &mdash; its own kinds of record.</p>
+    </div>
+    <div class="contact reveal">
+      <div class="box">
+        <h3>Vynance</h3>
+        <p><a href="/vynance/privacy-policy.html">Privacy Policy</a> &middot;
+           <a href="/vynance/terms-and-conditions.html">Terms &amp; Conditions</a><br>
+           Expense tracker &mdash; <code style="font-size:.86em">com.vynci.moneytracker</code></p>
+      </div>
+      <div class="box">
+        <h3>Rizq</h3>
+        <p><a href="/rizq/privacy-policy.html">Privacy Policy</a> &middot;
+           <a href="/rizq/terms-and-conditions.html">Terms &amp; Conditions</a><br>
+           Islamic finance &mdash; <code style="font-size:.86em">com.vynci.rizq</code></p>
+      </div>
+      <div class="box">
+        <h3>In short</h3>
+        <p>Neither app sends your records to us. Both are covered by the same stance: no ads, no
+           analytics, no profiling, and export whenever you want.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CONTACT ────────────────────────────────────────────────────── -->
+<section id="contact">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Contact</p>
+      <h2>Get in touch</h2>
+    </div>
+    <div class="contact reveal">
+      <div class="box">
+        <h3>Support &amp; enquiries</h3>
+        <p><a href="mailto:vyncisoftworks@gmail.com">vyncisoftworks@gmail.com</a><br>
+           Bug reports, feature requests and questions about either app.</p>
+      </div>
+      <div class="box">
+        <h3>Privacy requests</h3>
+        <p><a href="mailto:vyncisoftworks@gmail.com?subject=Privacy%20request">vyncisoftworks@gmail.com</a><br>
+           Data, deletion and account questions. Most data never reaches us in the first place.</p>
+      </div>
+      <div class="box">
+        <h3>Registered address</h3>
+        <p>Vynci Softworks<br>34 Bright Street, Kolkata 700017<br>West Bengal, India</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
 
 <footer>
-  &copy; 2026 Vynci Softworks. All rights reserved. &middot;
-  <a href="https://vynci.sbs/vynance/privacy-policy.html">Vynance Privacy Policy</a> &middot;
-  <a href="https://vynci.sbs/vynance/terms-and-conditions.html">Terms</a>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>Apps</h4>
+        <ul>
+          <li><a href="/vynance/">Vynance</a></li>
+          <li><a href="https://play.google.com/store/apps/details?id=com.vynci.moneytracker">Vynance on Google Play</a></li>
+          <li><a href="/rizq/">Rizq</a></li>
+          <li><a href="https://play.google.com/store/apps/details?id=com.vynci.rizq">Rizq on Google Play</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal &mdash; Vynance</h4>
+        <ul>
+          <li><a href="/vynance/privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="/vynance/terms-and-conditions.html">Terms &amp; Conditions</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal &mdash; Rizq</h4>
+        <ul>
+          <li><a href="/rizq/privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="/rizq/terms-and-conditions.html">Terms &amp; Conditions</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#privacy">Privacy stance</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="mailto:vyncisoftworks@gmail.com">vyncisoftworks@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="fine">
+      <span>&copy; 2026 Vynci Softworks. All rights reserved.</span>
+      <span>Kolkata, West Bengal, India</span>
+    </div>
+  </div>
 </footer>
 
-</div>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"Organization",
+      "@id":"https://vynci.sbs/#org",
+      "name":"Vynci Softworks",
+      "url":"https://vynci.sbs/",
+      "logo":"https://vynci.sbs/vynci-mark-512.png",
+      "email":"vyncisoftworks@gmail.com",
+      "address":{"@type":"PostalAddress","streetAddress":"34 Bright Street","addressLocality":"Kolkata","postalCode":"700017","addressRegion":"West Bengal","addressCountry":"IN"}
+    },
+    {
+      "@type":"SoftwareApplication",
+      "name":"Vynance",
+      "operatingSystem":"Android",
+      "applicationCategory":"FinanceApplication",
+      "publisher":{"@id":"https://vynci.sbs/#org"},
+      "url":"https://vynci.sbs/vynance/",
+      "downloadUrl":"https://play.google.com/store/apps/details?id=com.vynci.moneytracker",
+      "description":"A personal expense tracker for Android. Transactions, budgets, debts, investments and pensions in a database that stays on your device.",
+      "offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}
+    },
+    {
+      "@type":"SoftwareApplication",
+      "name":"Rizq",
+      "operatingSystem":"Android",
+      "applicationCategory":"FinanceApplication",
+      "publisher":{"@id":"https://vynci.sbs/#org"},
+      "url":"https://vynci.sbs/rizq/",
+      "downloadUrl":"https://play.google.com/store/apps/details?id=com.vynci.rizq",
+      "description":"Islamic personal finance for Android. A madhhab-configurable zakat engine, riba tracking and purification, sadaqah and asnaf records, and the Hijri calendar across budgets and reports.",
+      "offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}
+    }
+  ]
+}
+</script>
+
+<script>
+(function(){
+  var nav = document.getElementById('nav');
+  var onScroll = function(){ nav.classList.toggle('stuck', window.scrollY > 8); };
+  onScroll(); window.addEventListener('scroll', onScroll, {passive:true});
+
+  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var items = document.querySelectorAll('.reveal');
+  if (reduced || !('IntersectionObserver' in window)) {
+    items.forEach(function(el){ el.classList.add('in'); });
+    return;
+  }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, {rootMargin:'0px 0px -8% 0px', threshold:0.06});
+  items.forEach(function(el){ io.observe(el); });
+})();
+</script>
+
 </body>
 </html>

@@ -4,74 +4,56 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Vynance &mdash; Personal Expense Tracker for Android</title>
-<meta name="description" content="Vynance is an Android expense tracker by Vynci Softworks. Record spending, budgets, debts, investments and pensions in a database that stays on your device. Optional encrypted backup to your own Google Drive.">
+<meta name="description" content="Vynance is an Android expense tracker by Vynci Softworks. Record spending, budgets, debts, investments and pensions in a database that stays on your device. Optional backup to your own Google Drive. No ads, no analytics, works offline.">
+<meta name="keywords" content="expense tracker android, offline budget app, personal finance app, debt tracker, private expense tracker, Vynance">
 <meta property="og:title" content="Vynance — Personal Expense Tracker for Android">
 <meta property="og:description" content="Track spending, budgets, debts, investments and pensions. Your financial data stays on your device.">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://vynci.sbs/vynance/">
+<meta property="og:image" content="https://vynci.sbs/vynci-mark-512.png">
+<meta name="twitter:card" content="summary">
 <link rel="canonical" href="https://vynci.sbs/vynance/">
-<style>
-  :root{
-    --ink:#141419;--muted:#5b5b66;--line:#e5e5ec;--brand:#7C5CFC;--mint:#4ADE9C;
-    --bg:#ffffff;--soft:#f8f7ff;--deep:#171232;
-  }
-  *{box-sizing:border-box}
-  body{margin:0;background:var(--bg);color:var(--ink);
-       font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}
-  .wrap{max-width:860px;margin:0 auto;padding:0 22px}
-
-  /* hero */
-  header{background:var(--deep);color:#fff;padding:64px 0 60px;text-align:center}
-  header .logo{width:96px;height:96px;margin:0 auto 22px;display:block}
-  header h1{font-size:44px;line-height:1.1;margin:0 0 10px;letter-spacing:-.03em}
-  header .tag{font-size:19px;color:#c9c4e8;margin:0 auto;max-width:560px}
-  header .who{font-size:14px;color:#8e88b5;margin-top:22px}
-
-  section{padding:52px 0;border-bottom:1px solid var(--line)}
-  section:last-of-type{border-bottom:0}
-  h2{font-size:24px;margin:0 0 14px;letter-spacing:-.015em}
-  h3{font-size:16px;margin:0 0 4px}
-  p{margin:0 0 14px}
-  .lede{font-size:17.5px}
-
-  .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:26px}
-  .feat{border:1px solid var(--line);border-radius:14px;padding:18px 20px}
-  .feat h3{color:var(--brand)}
-  .feat p{font-size:14.5px;color:var(--muted);margin:0}
-
-  .privacy{background:var(--soft);border-left:4px solid var(--brand);
-           border-radius:10px;padding:20px 22px}
-  .privacy p:last-child{margin:0}
-  ul{padding-left:22px;margin:0 0 14px}
-  li{margin:7px 0}
-
-  .links{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
-  .links a{flex:1 1 220px;text-decoration:none;color:inherit;border:1px solid var(--line);
-           border-radius:12px;padding:16px 18px;transition:.15s}
-  .links a:hover{border-color:var(--brand);background:var(--soft)}
-  .links strong{display:block;color:var(--brand);font-size:16px;margin-bottom:2px}
-  .links span{font-size:14px;color:var(--muted)}
-
-  footer{padding:34px 0 56px;font-size:14px;color:var(--muted)}
-  footer a{color:var(--brand)}
-  @media(max-width:640px){
-    header{padding:46px 0 42px}header h1{font-size:33px}header .tag{font-size:17px}
-    .grid{grid-template-columns:1fr}section{padding:38px 0}
-  }
-</style>
+<link rel="stylesheet" href="/styles.css">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<meta name="theme-color" content="#171232">
+<meta name="theme-color" content="#0B0A14" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#171232" media="(prefers-color-scheme: light)">
+<style>
+  .hero::before{
+    background:
+      radial-gradient(40% 46% at 24% 24%, rgba(124,92,252,.62) 0%, transparent 62%),
+      radial-gradient(34% 40% at 76% 26%, rgba(95,206,196,.44) 0%, transparent 60%),
+      radial-gradient(46% 46% at 58% 90%, rgba(74,222,156,.30) 0%, transparent 64%);
+  }
+</style>
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 
-<header>
+<nav class="top" id="nav">
+  <div class="wrap inner">
+    <a class="brand" href="/">
+      <img src="/vynci-mark-512.png" alt="" width="26" height="26">
+      <span>Vynci Softworks</span>
+    </a>
+    <div class="links">
+      <a href="#features">Features</a>
+      <a href="#privacy" class="hide-sm">Privacy</a>
+      <a href="#legal" class="hide-sm">Legal</a>
+      <a href="/rizq/">Rizq</a>
+      <a href="/">All apps</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
   <div class="wrap">
-    <svg class="logo" viewBox="0 0 108 108" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Vynance logo">
+    <svg class="mark" viewBox="0 0 108 108" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Vynance logo" style="width:clamp(84px,7vw,104px);height:auto">
       <defs>
         <linearGradient id="g1" gradientUnits="userSpaceOnUse" x1="32" y1="76" x2="80" y2="28">
-          <stop offset="0" stop-color="#7C5CFC"/><stop offset="1" stop-color="#4ADE9C"/>
+          <stop offset="0" stop-color="#9d86ff"/><stop offset="1" stop-color="#4ADE9C"/>
         </linearGradient>
         <linearGradient id="g2" gradientUnits="userSpaceOnUse" x1="60" y1="38" x2="82" y2="26">
           <stop offset="0" stop-color="#5FCEC4"/><stop offset="1" stop-color="#4ADE9C"/>
@@ -82,90 +64,233 @@
         <path d="M67.8,30.1 A27.6,27.6 0 0 1 77.9,40.2" fill="none" stroke="url(#g2)" stroke-width="8" stroke-linecap="round"/>
       </g>
     </svg>
-    <h1>Vynance</h1>
-    <p class="tag">A personal expense tracker for Android. Record what you spend, what you owe and what you own &mdash; in a database that stays on your phone.</p>
-    <p class="who" style="margin-top:14px"><a href="https://vynci.sbs/vynance/privacy-policy.html" class="hero-legal" style="color:#c9c4e8">Privacy Policy</a> &nbsp;&middot;&nbsp; <a href="https://vynci.sbs/vynance/terms-and-conditions.html" style="color:#c9c4e8">Terms &amp; Conditions</a></p>
-    <p class="who">An Android application by <a href="../" style="color:#c9c4e8">Vynci Softworks</a>, Kolkata, India</p>
+    <h1><span class="grad">Vynance</span></h1>
+    <p class="tag">A personal expense tracker for Android. Record what you spend, what you owe and
+       what you own &mdash; in a database that stays on your phone.</p>
+    <div class="pills">
+      <span class="pill">Offline by default</span>
+      <span class="pill">No ads or analytics</span>
+      <span class="pill">Multi-currency</span>
+      <span class="pill">CSV &amp; PDF export</span>
+    </div>
+    <p class="meta" style="margin-top:28px">
+      <a href="https://play.google.com/store/apps/details?id=com.vynci.moneytracker">Google Play</a><span class="dot">&middot;</span>
+      <a href="/vynance/privacy-policy.html">Privacy Policy</a><span class="dot">&middot;</span>
+      <a href="/vynance/terms-and-conditions.html">Terms &amp; Conditions</a>
+    </p>
+    <p class="meta" style="margin-top:8px">An Android application by <a href="/">Vynci Softworks</a> &mdash; Kolkata, India</p>
   </div>
 </header>
 
-<div class="wrap">
+<main id="main">
 
-<section>
-  <h2>What Vynance does</h2>
-  <p class="lede">Vynance is a personal finance record-keeping app for Android phones. You enter your income and expenses; the app organises them into accounts, categories and budgets, and shows you where your money actually goes.</p>
-  <p>It is a private ledger, not a banking app. Vynance does not connect to any bank, does not read your statements and cannot move money. Every figure it shows is calculated from entries you typed yourself.</p>
+<section id="features">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">What it does</p>
+      <h2>A private ledger, not a banking app</h2>
+      <p>You enter your income and expenses; the app organises them into accounts, categories and
+         budgets, and shows you where your money actually goes. Vynance does not connect to any bank,
+         does not read your statements and cannot move money. Every figure it shows is calculated
+         from entries you typed yourself.</p>
+    </div>
 
-  <div class="grid">
-    <div class="feat">
-      <h3>Transactions &amp; accounts</h3>
-      <p>Log expenses, income and transfers across multiple accounts &mdash; bank, cash, wallet, credit card or investment &mdash; each in its own currency.</p>
-    </div>
-    <div class="feat">
-      <h3>Budgets &amp; alerts</h3>
-      <p>Set monthly limits per category and get a local notification as you approach them.</p>
-    </div>
-    <div class="feat">
-      <h3>Reports &amp; insights</h3>
-      <p>Category breakdowns, spending trends, cash-flow and savings charts, and plain-language summaries of what changed month to month.</p>
-    </div>
-    <div class="feat">
-      <h3>Debts &amp; repayments</h3>
-      <p>Track money lent and borrowed per person, record part-payments, and see what is outstanding and what is overdue.</p>
-    </div>
-    <div class="feat">
-      <h3>Investments &amp; pensions</h3>
-      <p>Record the value of holdings and retirement plans over time from your provider's statements, and see contributions against growth.</p>
-    </div>
-    <div class="feat">
-      <h3>Receipts, voice &amp; widgets</h3>
-      <p>Attach a receipt photo, add a transaction by speaking it, or check your balance from a home-screen widget.</p>
+    <div class="bento reveal">
+      <div class="tile wide">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5" width="19" height="14" rx="2.5"/><path d="M2.5 10h19"/><path d="M6.5 15h4"/></svg></div>
+        <h3>Transactions &amp; accounts</h3>
+        <p>Log expenses, income and transfers across bank, cash, wallet, credit-card and investment
+           accounts &mdash; each in its own currency, each with its own running balance. Recurring
+           rules post the entries that repeat.</p>
+      </div>
+      <div class="tile wide">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20h18"/><rect x="5" y="11" width="4" height="9"/><rect x="10.5" y="6" width="4" height="14"/><rect x="16" y="14" width="4" height="6"/></svg></div>
+        <h3>Budgets &amp; alerts</h3>
+        <p>Set monthly limits per category and get a local notification as you approach one &mdash;
+           generated on your phone, sent by nothing and to no one.</p>
+      </div>
+      <div class="tile">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l5.5-6 4 4L21 6"/><path d="M15 6h6v6"/></svg></div>
+        <h3>Reports &amp; insights</h3>
+        <p>Category breakdowns, spending trends, cash-flow and savings charts, and plain-language
+           summaries of what changed month to month.</p>
+      </div>
+      <div class="tile">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 20v-1.5a3.5 3.5 0 0 0-3.5-3.5h-5A3.5 3.5 0 0 0 4 18.5V20"/><circle cx="10" cy="8" r="3.5"/><path d="M17 11h4M19 9v4"/></svg></div>
+        <h3>Debts &amp; repayments</h3>
+        <p>Track money lent and borrowed per person, record part-payments, and see what is
+           outstanding and what is overdue.</p>
+      </div>
+      <div class="tile">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5"/><path d="M4 19h16"/><path d="M8 15l4-5 3 3 5-7"/></svg></div>
+        <h3>Investments &amp; pensions</h3>
+        <p>Record the value of holdings and retirement plans over time from your provider&#8217;s
+           statements, and see contributions against growth.</p>
+      </div>
+      <div class="tile full">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="9" cy="9.5" r="1.8"/><path d="M4 17l4.5-4.5L13 17"/><path d="M14 14l2.5-2.5L20 15"/></svg></div>
+        <h3>Receipts, voice entry, widgets and export</h3>
+        <p>Attach a receipt photo to any transaction, add an entry by speaking it, check your balance
+           from a home-screen widget or the quick-settings tile, and export the whole ledger to CSV
+           or a formatted PDF report whenever you want it elsewhere.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<section>
-  <h2>Your data stays on your device</h2>
-  <div class="privacy">
-    <p>Vynance stores every transaction, balance and receipt in a private database on your phone. There is no Vynance server. We do not receive, store, sell or analyse your financial records, and the app contains no advertising, analytics or tracking of any kind.</p>
-    <p>The only copy that ever leaves your phone is a backup you choose to create.</p>
+<section id="privacy">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Privacy</p>
+      <h2>Your data stays on your device</h2>
+    </div>
+    <div class="callout reveal">
+      <p>Vynance stores every transaction, balance and receipt in a private database on your phone.
+         There is no Vynance server. We do not receive, store, sell or analyse your financial
+         records, and the app contains no advertising, analytics or tracking of any kind.</p>
+      <p>The only copy that ever leaves your phone is a backup you choose to create.</p>
+    </div>
+
+    <div class="section-head reveal" style="margin-top:44px">
+      <h2 style="font-size:clamp(20px,1.2vw + 17px,25px)">Why Vynance asks for a Google account</h2>
+    </div>
+    <ul class="checks reveal">
+      <li><strong>Google Sign-In</strong> identifies which account a backup belongs to, and lets the
+          app detect when a different person signs in on a shared device, so one user&#8217;s records
+          are never shown to another.</li>
+      <li><strong>Google Drive (app data folder)</strong> stores your backup &mdash; a compressed
+          copy of the app database and your receipt images &mdash; inside your own Google account.</li>
+    </ul>
+    <p class="reveal" style="margin-top:20px;color:var(--muted);font-size:15px">
+      The app requests the <code>drive.appdata</code> scope only. That is Drive&#8217;s hidden,
+      application-specific folder: Vynance cannot see, read, list or modify any other file in your
+      Drive, and the developer has no access to the backup at all. It exists so that replacing or
+      resetting your phone does not cost you your records. You can revoke this access at any time
+      from your <a href="https://myaccount.google.com/permissions" style="color:var(--violet);font-weight:560">Google Account permissions</a> page.
+    </p>
   </div>
 </section>
 
-<section>
-  <h2>Why Vynance asks for a Google account</h2>
-  <p>Vynance uses two Google services, and only these two:</p>
-  <ul>
-    <li><strong>Google Sign-In</strong> identifies which account a backup belongs to, and lets the app detect when a different person signs in on a shared device so one user's records are never shown to another.</li>
-    <li><strong>Google Drive (app data folder)</strong> stores your backup &mdash; a compressed copy of the app database and your receipt images &mdash; inside your own Google account.</li>
-  </ul>
-  <p>The app requests the <code>drive.appdata</code> scope only. That is Drive's hidden, application-specific folder: Vynance cannot see, read, list or modify any other file in your Drive, and the developer has no access to the backup at all. It exists so that replacing or resetting your phone does not cost you your records.</p>
-  <p>You can revoke this access at any time from your <a href="https://myaccount.google.com/permissions">Google Account permissions</a> page.</p>
-</section>
-
-<section>
-  <h2>Legal</h2>
-  <div class="links">
-    <a href="https://vynci.sbs/vynance/privacy-policy.html">
-      <strong>Privacy Policy</strong>
-      <span>What data the app handles, and what never leaves your device.</span>
-    </a>
-    <a href="https://vynci.sbs/vynance/terms-and-conditions.html">
-      <strong>Terms &amp; Conditions</strong>
-      <span>Licence, subscriptions, disclaimers and limits.</span>
-    </a>
+<section id="rizq-cross">
+  <div class="wrap">
+    <div class="card r reveal" style="display:grid;gap:18px">
+      <div class="top" style="margin:0">
+        <div class="icon">
+          <svg viewBox="0 0 108 108" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Rizq logo">
+            <defs>
+              <linearGradient id="rg1" gradientUnits="userSpaceOnUse" x1="30" y1="80" x2="82" y2="26">
+                <stop offset="0" stop-color="#0EA875"/><stop offset="1" stop-color="#4ADE9C"/>
+              </linearGradient>
+            </defs>
+            <path d="M70 30a27 27 0 1 0 0 48 32 32 0 1 1 0-48Z" fill="url(#rg1)"/>
+            <path d="M78.5 46.5l2.6 5.6 6.1.8-4.5 4.2 1.2 6-5.4-3-5.4 3 1.2-6-4.5-4.2 6.1-.8 2.6-5.6Z" fill="#D9A93C"/>
+          </svg>
+        </div>
+        <div>
+          <p class="kicker">Also from Vynci Softworks</p>
+          <h3>Rizq &mdash; the Islamic edition</h3>
+        </div>
+      </div>
+      <p class="desc" style="margin:0">Everything on this page, plus a madhhab-configurable zakat
+         engine, Zakat al-Fitr, riba flagging and purification, sadaqah and asnaf records, halal
+         spending screening, Islamic financing types and the Hijri calendar across budgets and
+         reports. Same database format &mdash; a local backup moves straight across.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vynci.rizq">Get Rizq on Google Play</a>
+        <a class="btn btn-ghost" href="/rizq/">What Rizq adds &rarr;</a>
+      </div>
+    </div>
   </div>
 </section>
+
+<section id="legal">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Legal</p>
+      <h2>Policies</h2>
+    </div>
+    <div class="contact reveal">
+      <div class="box">
+        <h3><a href="/vynance/privacy-policy.html">Privacy Policy &rarr;</a></h3>
+        <p>What data the app handles, what it stores, and what never leaves your device.</p>
+      </div>
+      <div class="box">
+        <h3><a href="/vynance/terms-and-conditions.html">Terms &amp; Conditions &rarr;</a></h3>
+        <p>Licence, subscriptions, disclaimers and limits of liability.</p>
+      </div>
+      <div class="box">
+        <h3><a href="mailto:vyncisoftworks@gmail.com">Support &rarr;</a></h3>
+        <p>Bug reports, feature requests, billing and privacy requests.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
 
 <footer>
-  <p>
-    <strong>Vynance</strong> is developed and published by <a href="../"><strong>Vynci Softworks</strong></a><br>
-    34 Bright Street, Kolkata 700017, West Bengal, India<br>
-    Support and enquiries: <a href="mailto:vyncisoftworks@gmail.com">vyncisoftworks@gmail.com</a>
-  </p>
-  <p>&copy; 2026 Vynci Softworks. All rights reserved.</p>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>Vynance</h4>
+        <ul>
+          <li><a href="https://play.google.com/store/apps/details?id=com.vynci.moneytracker">Google Play</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#privacy">Privacy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="/vynance/privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="/vynance/terms-and-conditions.html">Terms &amp; Conditions</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Vynci Softworks</h4>
+        <ul>
+          <li><a href="/">All apps</a></li>
+          <li><a href="/rizq/">Rizq</a></li>
+          <li><a href="mailto:vyncisoftworks@gmail.com">vyncisoftworks@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="fine">
+      <span><strong>Vynance</strong> is developed and published by <a href="/">Vynci Softworks</a> &mdash; 34 Bright Street, Kolkata 700017, West Bengal, India</span>
+      <span>&copy; 2026 Vynci Softworks. All rights reserved.</span>
+    </div>
+  </div>
 </footer>
 
-</div>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"SoftwareApplication",
+  "name":"Vynance",
+  "operatingSystem":"Android",
+  "applicationCategory":"FinanceApplication",
+  "url":"https://vynci.sbs/vynance/",
+  "downloadUrl":"https://play.google.com/store/apps/details?id=com.vynci.moneytracker",
+  "description":"A personal expense tracker for Android. Transactions, budgets, debts, investments and pensions in a database that stays on your device.",
+  "offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},
+  "publisher":{"@type":"Organization","name":"Vynci Softworks","url":"https://vynci.sbs/"}
+}
+</script>
+
+<script>
+(function(){
+  var nav = document.getElementById('nav');
+  var onScroll = function(){ nav.classList.toggle('stuck', window.scrollY > 8); };
+  onScroll(); window.addEventListener('scroll', onScroll, {passive:true});
+  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var items = document.querySelectorAll('.reveal');
+  if (reduced || !('IntersectionObserver' in window)) { items.forEach(function(el){ el.classList.add('in'); }); return; }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, {rootMargin:'0px 0px -8% 0px', threshold:0.06});
+  items.forEach(function(el){ io.observe(el); });
+})();
+</script>
+
 </body>
 </html>

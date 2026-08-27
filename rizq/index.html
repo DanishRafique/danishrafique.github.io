@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rizq &mdash; Islamic Personal Finance &amp; Zakat App for Android</title>
+<meta name="description" content="Rizq is an Islamic personal finance app for Android by Vynci Softworks. A madhhab-configurable zakat engine, Zakat al-Fitr, riba tracking and purification, sadaqah and asnaf records, halal spending screening and the Hijri calendar — in a database that stays on your device.">
+<meta name="keywords" content="islamic finance app, zakat calculator android, zakat app, riba tracking, halal budgeting app, hijri calendar budget, sadaqah tracker, Rizq app">
+<meta property="og:title" content="Rizq — Islamic Personal Finance &amp; Zakat App for Android">
+<meta property="og:description" content="Zakat, riba, sadaqah and the Hijri calendar built into an offline personal-finance ledger. Rizq states the method behind every figure — it does not issue rulings.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://vynci.sbs/rizq/">
+<meta property="og:image" content="https://vynci.sbs/vynci-mark-512.png">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://vynci.sbs/rizq/">
+<link rel="stylesheet" href="/styles.css">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#06120E" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#062F24" media="(prefers-color-scheme: light)">
+<style>
+  .hero{background:#062018}
+  .hero::before{
+    background:
+      radial-gradient(40% 46% at 24% 26%, rgba(14,168,117,.62) 0%, transparent 62%),
+      radial-gradient(34% 40% at 78% 22%, rgba(74,222,156,.42) 0%, transparent 60%),
+      radial-gradient(44% 44% at 60% 90%, rgba(217,169,60,.34) 0%, transparent 64%);
+  }
+  .hero h1 .grad{background:linear-gradient(96deg,#6ee7b7 0%,#a7f3d0 45%,#f3cf7a 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .hero .tag{color:#c6e6d9}
+  .hero .meta{color:#84ae9c}
+  .hero .meta a{color:#c6e6d9;border-bottom-color:rgba(198,230,217,.28)}
+  .tile .ico{background:color-mix(in srgb, var(--emerald) 13%, transparent);color:var(--emerald)}
+  .tile:hover{border-color:color-mix(in srgb, var(--emerald) 34%, var(--line))}
+  .tile.gold .ico{background:color-mix(in srgb, var(--gold) 17%, transparent);color:var(--gold)}
+  .contact a,.callout a{color:var(--emerald)!important}
+  code{background:color-mix(in srgb, var(--emerald) 12%, transparent);color:var(--emerald)}
+  details[open]{border-color:color-mix(in srgb, var(--emerald) 34%, var(--line))}
+  footer a:hover{color:var(--emerald)}
+  .principle .n{background:linear-gradient(120deg,var(--emerald),var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent}
+  nav.top .links a:hover{color:var(--emerald)}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<nav class="top" id="nav">
+  <div class="wrap inner">
+    <a class="brand" href="/">
+      <img src="/vynci-mark-512.png" alt="" width="26" height="26">
+      <span>Vynci Softworks</span>
+    </a>
+    <div class="links">
+      <a href="#islamic">Islamic features</a>
+      <a href="#everything" class="hide-sm">Everyday</a>
+      <a href="#stance" class="hide-sm">Our stance</a>
+      <a href="#legal">Legal</a>
+      <a href="/vynance/">Vynance</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <svg class="mark" viewBox="0 0 108 108" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Rizq logo" style="width:clamp(84px,7vw,104px);height:auto">
+      <defs>
+        <linearGradient id="rg1" gradientUnits="userSpaceOnUse" x1="30" y1="80" x2="82" y2="26">
+          <stop offset="0" stop-color="#2fd39a"/><stop offset="1" stop-color="#a7f3d0"/>
+        </linearGradient>
+      </defs>
+      <path d="M70 30a27 27 0 1 0 0 48 32 32 0 1 1 0-48Z" fill="url(#rg1)"/>
+      <path d="M78.5 46.5l2.6 5.6 6.1.8-4.5 4.2 1.2 6-5.4-3-5.4 3 1.2-6-4.5-4.2 6.1-.8 2.6-5.6Z" fill="#F3CF7A"/>
+    </svg>
+    <h1><span class="grad">Rizq</span></h1>
+    <p class="tag">Islamic personal finance for Android. Zakat, riba, sadaqah and the Hijri calendar
+       built into an ordinary, private household ledger &mdash; with the method behind every figure
+       shown on screen.</p>
+    <div class="pills">
+      <span class="pill">Zakat engine</span>
+      <span class="pill">Riba tracking &amp; purification</span>
+      <span class="pill">Hijri calendar</span>
+      <span class="pill">Offline &middot; no ads</span>
+    </div>
+    <p class="meta" style="margin-top:28px">
+      <a href="https://play.google.com/store/apps/details?id=com.vynci.rizq">Google Play</a><span class="dot">&middot;</span>
+      <a href="/rizq/privacy-policy.html">Privacy Policy</a><span class="dot">&middot;</span>
+      <a href="/rizq/terms-and-conditions.html">Terms &amp; Conditions</a>
+    </p>
+    <p class="meta" style="margin-top:8px">An Android application by <a href="/">Vynci Softworks</a> &mdash; Kolkata, India</p>
+  </div>
+</header>
+
+<main id="main">
+
+<section id="islamic">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">What Rizq adds</p>
+      <h2>Your money. Your obligations. One ledger.</h2>
+      <p>Rizq is built to answer five questions: what money you have, what part of it is actually
+         yours, what part carries an Islamic obligation, where it came from and where it went.
+         Islamic finance sits in the core of the ledger rather than in a calculator bolted onto
+         the side.</p>
+    </div>
+
+    <div class="bento reveal">
+      <div class="tile wide">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M3 12h18M3 18h18"/><circle cx="8" cy="6" r="2" fill="currentColor" stroke="none"/><circle cx="16" cy="12" r="2" fill="currentColor" stroke="none"/><circle cx="10" cy="18" r="2" fill="currentColor" stroke="none"/></svg></div>
+        <h3>A zakat engine, not a calculator</h3>
+        <p>Mark which accounts and assets are zakatable, record gold and silver by weight, add
+           receivables and business inventory, then set your nisab basis and madhhab &mdash; Hanafi,
+           Shafi&#8217;i, Maliki or Hanbali. Rizq assesses your wealth against the threshold across
+           the hawl and stores each assessment with the exact inputs that produced it, so last
+           year&#8217;s figure never silently changes when a price does.</p>
+      </div>
+      <div class="tile wide">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+        <h3>Riba tracked, separated, purified</h3>
+        <p>Flag an account as interest-bearing and the interest it credits is marked as riba rather
+           than counted as income &mdash; on one-off entries and on recurring rules alike, so a
+           standing monthly credit cannot slip into your income totals unnoticed. The purification
+           view totals what has accrued and keeps a record of what you have already given away.</p>
+      </div>
+      <div class="tile">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v6"/><path d="M8 6h8"/><path d="M4.5 20.5h15"/><path d="M6.5 20.5V13a5.5 5.5 0 0 1 11 0v7.5"/></svg></div>
+        <h3>Zakat al-Fitr</h3>
+        <p>Per household head, by your chosen staple and its sa&#8217; weight, with the madhhab
+           position named beside the figure &mdash; and a reminder in the last third of Ramadan,
+           because the timing is the point.</p>
+      </div>
+      <div class="tile">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l8.8 8.8 8.8-8.8a5.5 5.5 0 0 0 0-7.8Z"/></svg></div>
+        <h3>Sadaqah &amp; the eight asnaf</h3>
+        <p>Log charity as it happens and record which of the eight categories named in Surah
+           At-Tawbah 9:60 each zakat payment went to. One payment, one category &mdash; nothing is
+           apportioned on your behalf.</p>
+      </div>
+      <div class="tile">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6.5A8.5 8.5 0 1 0 18 17.5 10.5 10.5 0 1 1 18 6.5Z"/></svg></div>
+        <h3>The Hijri calendar, everywhere</h3>
+        <p>Switch periods from Gregorian to Hijri and months, reports and totals follow, with a
+           sighting offset you control. Ramadan budgets, a Hajj or Umrah goal with a target Hijri
+           year, and Qurbani and Eid presets all sit on that same period system.</p>
+      </div>
+      <div class="tile">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11.5 11.2 14 15 9.5"/><path d="M12 3 4 6.2V12c0 5 3.4 8.2 8 9 4.6-.8 8-4 8-9V6.2L12 3Z"/></svg></div>
+        <h3>Spending screening that states, never scores</h3>
+        <p>Mark a category Clear, Review or Avoid and Rizq summarises your spending against your own
+           markings. Nothing is classified for you, there is no halal score, and no line of it
+           grades your life.</p>
+      </div>
+      <div class="tile">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2.5"/><path d="M7 9h10M7 13h6"/></svg></div>
+        <h3>Islamic financing &amp; debt</h3>
+        <p>Record a debt as qard hasan, murabaha or ijara &mdash; the agreed total and what is left,
+           with no interest-rate field anywhere, because these contracts have none. Takaful
+           contributions ride the ordinary recurring-expense path.</p>
+      </div>
+      <div class="tile">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3v5h5"/><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8l-5-5Z"/><path d="M9 13h6M9 17h4"/></svg></div>
+        <h3>A statement you can hand over</h3>
+        <p>Export a zakat statement as a PDF for one assessment or a whole year &mdash; restating the
+           figures exactly as they were frozen, never recomputed at export time.</p>
+      </div>
+      <div class="tile gold full">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.5"/><path d="M12 8.2v.2M12 11.5v4.6"/></svg></div>
+        <h3>Rizq states the facts. It does not issue a fatwa.</h3>
+        <p>Every Islamic figure shows the rule that produced it and the inputs you gave, and the
+           wording stays descriptive throughout &mdash; &ldquo;review&rdquo; and &ldquo;avoid&rdquo;,
+           never a ruling. Madhhabs differ, and Rizq names which position it applied rather than
+           pretending there is only one. For a binding opinion on your own situation, ask a
+           qualified scholar &mdash; Rizq keeps the records that make that conversation short.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="everything">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">And everything else</p>
+      <h2>A complete household ledger underneath</h2>
+      <p>Rizq is the Islamic edition of <a href="/vynance/" style="color:var(--emerald);font-weight:560">Vynance</a>,
+         built from the same source. Nothing is traded away for the Islamic features &mdash; the
+         everyday app is all there.</p>
+    </div>
+    <div class="bento reveal">
+      <div class="tile wide">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5" width="19" height="14" rx="2.5"/><path d="M2.5 10h19"/><path d="M6.5 15h4"/></svg></div>
+        <h3>Transactions, accounts &amp; budgets</h3>
+        <p>Expenses, income and transfers across bank, cash, wallet, credit-card and investment
+           accounts, each in its own currency; category budgets with local alerts; recurring rules
+           for the entries that repeat.</p>
+      </div>
+      <div class="tile wide">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l5.5-6 4 4L21 6"/><path d="M15 6h6v6"/></svg></div>
+        <h3>Reports, debts, investments &amp; goals</h3>
+        <p>Category breakdowns, trends, cash-flow and savings charts; money lent and borrowed per
+           person; holdings, pensions and savings goals recorded from your provider&#8217;s
+           statements.</p>
+      </div>
+      <div class="tile full">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="9" cy="9.5" r="1.8"/><path d="M4 17l4.5-4.5L13 17"/><path d="M14 14l2.5-2.5L20 15"/></svg></div>
+        <h3>Receipts, voice entry, widgets and export</h3>
+        <p>Attach a receipt photo, add an entry by speaking it, check your balance from a home-screen
+           widget or the quick-settings tile, and export the whole ledger to CSV or a formatted PDF
+           whenever you want it elsewhere.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="stance">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Our stance</p>
+      <h2>What Rizq will not do</h2>
+      <p>Some things are left out on purpose. These are decisions, not gaps.</p>
+    </div>
+    <div class="principles reveal">
+      <div class="principle">
+        <div class="n">01</div><h3>No halal score</h3>
+        <p>No single number summarising your spending against a religious standard. That would be the app grading a life.</p>
+      </div>
+      <div class="principle">
+        <div class="n">02</div><h3>No inheritance calculator</h3>
+        <p>Faraid is a legal instrument acted on at the worst possible moment. It needs a scholar, not a budgeting app.</p>
+      </div>
+      <div class="principle">
+        <div class="n">03</div><h3>No guessed prices</h3>
+        <p>Gold and silver rates are the ones you enter. The app ships no price feed and invents no figure you did not state.</p>
+      </div>
+      <div class="principle">
+        <div class="n">04</div><h3>No ruling by default</h3>
+        <p>No category arrives pre-classified as permitted or not. Your markings, your madhhab, your call.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="privacy">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Privacy</p>
+      <h2>Your records &mdash; financial and religious &mdash; stay on your device</h2>
+    </div>
+    <div class="callout reveal">
+      <p>Rizq stores every transaction, balance, receipt, zakat assessment, charity record and
+         madhhab preference in a private database on your phone. There is no Rizq server. We do not
+         receive, store, sell or analyse any of it, and the app contains no advertising, analytics
+         or tracking of any kind.</p>
+      <p>Your religious observance is not data we collect. It never leaves the device except inside
+         a backup <em>you</em> choose to create, in your own Google Drive app folder that we cannot
+         browse.</p>
+    </div>
+    <p class="reveal" style="margin-top:20px;color:var(--muted);font-size:15px">
+      The app requests the <code>drive.appdata</code> scope only &mdash; Drive&#8217;s hidden,
+      application-specific folder. It cannot see, read, list or modify any other file in your Drive.
+      Full detail is in the <a href="/rizq/privacy-policy.html" style="color:var(--emerald);font-weight:560">Privacy Policy</a>.
+    </p>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap narrow">
+    <div class="section-head reveal">
+      <p class="eyebrow">Questions</p>
+      <h2>Frequently asked</h2>
+    </div>
+    <div class="reveal">
+      <details>
+        <summary>Which madhhab does the zakat engine follow?</summary>
+        <div class="body"><p>Whichever you choose. Hanafi, Shafi&#8217;i, Maliki and Hanbali positions are configurable, and the methodology view names the rule that produced the figure you are looking at. Shia khums is not currently supported.</p></div>
+      </details>
+      <details>
+        <summary>Where do the gold and silver prices come from?</summary>
+        <div class="body"><p>From you. Rizq ships no price feed, because no source it could reach without an API key would be reliable enough to base an obligation on. You enter the rate you are using, and the assessment records it alongside the figure so you can see later what it was based on.</p></div>
+      </details>
+      <details>
+        <summary>Is Rizq issuing religious rulings?</summary>
+        <div class="body"><p>No. Rizq states financial facts, shows its method and preserves your inputs. Anything that would amount to a ruling &mdash; classifying your spending for you, scoring it, or calculating an inheritance share &mdash; is deliberately not built. Consult a qualified scholar for a binding opinion.</p></div>
+      </details>
+      <details>
+        <summary>Can I move over from Vynance?</summary>
+        <div class="body"><p>Yes. Export a local backup from Vynance and restore it in Rizq &mdash; the database format is identical, so nothing is lost and no conversion runs. Google Drive backups are scoped per app, so use the local file for the move.</p></div>
+      </details>
+      <details>
+        <summary>Does the Hijri calendar need a network connection?</summary>
+        <div class="body"><p>No. Hijri dates are computed on your device from tabular data shipped inside the app, with a sighting offset you can set yourself. Nothing about your dates or observance is requested from a server.</p></div>
+      </details>
+      <details>
+        <summary>What does it cost?</summary>
+        <div class="body"><p>Rizq is free to install. Zakat on wealth, Zakat al-Fitr, riba tracking, sadaqah and asnaf records, the screening summary, Islamic financing types and the seasonal budgets and goals are all in the free tier. A premium subscription raises the account and budget limits and unlocks the heavier reporting and export tools, including the zakat statement PDF. No ads at any tier.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section id="legal">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Legal</p>
+      <h2>Policies</h2>
+    </div>
+    <div class="contact reveal">
+      <div class="box">
+        <h3><a href="/rizq/privacy-policy.html">Privacy Policy &rarr;</a></h3>
+        <p>What data the app handles, what it stores, and what never leaves your device.</p>
+      </div>
+      <div class="box">
+        <h3><a href="/rizq/terms-and-conditions.html">Terms &amp; Conditions &rarr;</a></h3>
+        <p>Licence, subscriptions, disclaimers, and why Rizq is not religious advice.</p>
+      </div>
+      <div class="box">
+        <h3><a href="mailto:vyncisoftworks@gmail.com">Support &rarr;</a></h3>
+        <p>Bug reports, feature requests, billing and privacy requests.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>Rizq</h4>
+        <ul>
+          <li><a href="https://play.google.com/store/apps/details?id=com.vynci.rizq">Google Play</a></li>
+          <li><a href="#islamic">Islamic features</a></li>
+          <li><a href="#stance">Our stance</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="/rizq/privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="/rizq/terms-and-conditions.html">Terms &amp; Conditions</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Vynci Softworks</h4>
+        <ul>
+          <li><a href="/">All apps</a></li>
+          <li><a href="/vynance/">Vynance</a></li>
+          <li><a href="mailto:vyncisoftworks@gmail.com">vyncisoftworks@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="fine">
+      <span><strong>Rizq</strong> is developed and published by <a href="/">Vynci Softworks</a> &mdash; 34 Bright Street, Kolkata 700017, West Bengal, India</span>
+      <span>&copy; 2026 Vynci Softworks. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"SoftwareApplication",
+  "name":"Rizq",
+  "operatingSystem":"Android",
+  "applicationCategory":"FinanceApplication",
+  "url":"https://vynci.sbs/rizq/",
+  "downloadUrl":"https://play.google.com/store/apps/details?id=com.vynci.rizq",
+  "description":"Islamic personal finance for Android. A madhhab-configurable zakat engine, Zakat al-Fitr, riba tracking and purification, sadaqah and asnaf records, halal spending screening and the Hijri calendar, in a database that stays on your device.",
+  "offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},
+  "publisher":{"@type":"Organization","name":"Vynci Softworks","url":"https://vynci.sbs/"}
+}
+</script>
+
+<script>
+(function(){
+  var nav = document.getElementById('nav');
+  var onScroll = function(){ nav.classList.toggle('stuck', window.scrollY > 8); };
+  onScroll(); window.addEventListener('scroll', onScroll, {passive:true});
+  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var items = document.querySelectorAll('.reveal');
+  if (reduced || !('IntersectionObserver' in window)) { items.forEach(function(el){ el.classList.add('in'); }); return; }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, {rootMargin:'0px 0px -8% 0px', threshold:0.06});
+  items.forEach(function(el){ io.observe(el); });
+})();
+</script>
+
+</body>
+</html>
